@@ -1,3 +1,4 @@
+import { printData } from "./printData.js"
 let city = ''
 let country = ''
 let btn = document.getElementById('search')
@@ -11,9 +12,9 @@ export async function weatherRequest(city, country) {
   try {
 
   const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&sys.country=${country}&APPID=46dad100c013cf682570bfda9e36abf6`, {mode: 'cors'});
-  const data = await response.json();
+  let data = await response.json();
   console.log(data);
-  return data
+  printData(data);
 
   } catch (error){
     alert('this b broken')
