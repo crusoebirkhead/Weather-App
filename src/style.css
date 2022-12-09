@@ -1,3 +1,21 @@
-.hello {
-    color: blue;
-  }
+body {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+#search{
+  margin-top: 20px;
+}
+.title {
+  font-weight: 400;
+  color: #161616
+}
+
+.container {
+  text-align: center;
+}
+
+#country {
+  margin-left: 20px;
+}
